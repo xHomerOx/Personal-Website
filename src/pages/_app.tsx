@@ -1,13 +1,15 @@
 import { AppProps } from 'next/app';
-import { HeaderProvider } from '@/context/_HeaderContext';
+import { AppProvider } from '@/context/_AppContext';
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <HeaderProvider>
+     <AppProvider>
       <Header />
       <Component {...pageProps} />
-    </HeaderProvider>
+      <Footer />
+    </AppProvider>
   );
 };
 

@@ -10,16 +10,16 @@ const MainContainer = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
 `;
 
 const Main: React.FC = () => {
-    return (
-      <MainContainer>
-          <h2>Welcome to my new Website Application</h2>
-          <p>We will update content as soon as possible.</p>
-      </MainContainer>
-    );
-  };
-  
-  export default Main;
+  return (
+    <MainContainer>
+      <h2>Welcome to my new Website Application</h2>
+      <p>We will update content as soon as possible.</p>
+    </MainContainer>
+  );
+};
+
+export default Main;
