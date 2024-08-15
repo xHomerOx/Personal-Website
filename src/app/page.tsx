@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <div>
       <Header />
       <Main />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

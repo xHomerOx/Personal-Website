@@ -1,4 +1,6 @@
 'use client'
+import React from 'react';
+import { useAppContext } from '@/context/_AppContext';
 import styled from 'styled-components';
 
 const MainContainer = styled.main`

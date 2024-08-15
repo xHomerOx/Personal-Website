@@ -2,10 +2,11 @@ import { AppProps } from 'next/app';
 import { AppProvider } from '@/context/_AppContext';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-     <AppProvider>
+    <AppProvider>
       <Header />
       <Component {...pageProps} />
       <Footer />

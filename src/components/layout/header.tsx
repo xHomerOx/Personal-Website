@@ -1,4 +1,6 @@
 'use client'
+import React from 'react';
+import { useAppContext } from '@/context/_AppContext';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
@@ -50,9 +52,11 @@ const Nav = styled.nav`
 `;
 
 const Header: React.FC = () => {
+  const { title } = useAppContext();
+
   return (
     <HeaderContainer>
-      <Title>xHomerOx WebApp</Title>
+      <Title>{title}</Title>
       <Nav>
         <a href="/">Home</a>
         <a href="/about">About</a>

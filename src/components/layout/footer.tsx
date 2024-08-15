@@ -1,4 +1,6 @@
 'use client'
+import React from 'react';
+import { useAppContext } from '@/context/_AppContext';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
@@ -60,22 +62,24 @@ const CopyrightSection = styled.p`
 `;
 
 const Footer: React.FC = () => {
-  return (
-    <FooterContainer>
-      <TitleSection>
-        <h2>My Website</h2>
-      </TitleSection>
-      <NavSection>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </NavSection>
-      <CopyrightSection>
-        Copyright &copy; Otello Boz Maraldo - xHomerOx. All rights reserved.
-      </CopyrightSection>
-    </FooterContainer>
-  );
-};
+    const { copyright } = useAppContext();
+  
+    return (
+      <FooterContainer>
+        <TitleSection>
+          <h2>My Website</h2>
+        </TitleSection>
+        <NavSection>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </NavSection>
+        <CopyrightSection>
+          {copyright}
+        </CopyrightSection>
+      </FooterContainer>
+    );
+  };
 
 export default Footer;
