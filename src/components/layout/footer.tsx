@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import { useAppContext } from '@/context/_AppContext';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
@@ -62,12 +61,10 @@ const CopyrightSection = styled.p`
 `;
 
 const Footer: React.FC = () => {
-    const { copyright } = useAppContext();
-  
     return (
       <FooterContainer>
         <TitleSection>
-          <h2>My Website</h2>
+          <h2>xHomerOx WebApp</h2>
         </TitleSection>
         <NavSection>
           <a href="#">Home</a>
@@ -75,9 +72,6 @@ const Footer: React.FC = () => {
           <a href="#">Services</a>
           <a href="#">Contact</a>
         </NavSection>
-        <CopyrightSection>
-          {copyright}
-        </CopyrightSection>
       </FooterContainer>
     );
   };

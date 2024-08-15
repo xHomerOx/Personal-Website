@@ -1,15 +1,11 @@
 import { AppProps } from 'next/app';
 import { AppProvider } from '@/context/_AppContext';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import '../styles/globals.css';
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <AppProvider>
-      <Header />
       <Component {...pageProps} />
-      <Footer />
     </AppProvider>
   );
 };

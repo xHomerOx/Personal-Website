@@ -6,7 +6,6 @@ import styled from 'styled-components';
 const MainContainer = styled.main`
   background-color: #000;
   color: white;
-  padding: 20px;
   min-height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
