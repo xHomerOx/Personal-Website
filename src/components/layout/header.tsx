@@ -1,4 +1,4 @@
-// components/Header.tsx
+'use client'
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
@@ -29,7 +29,7 @@ const Nav = styled.nav`
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <Title>Web App</Title>
+      <Title>xHomerOx Web Application</Title>
       <Nav>
         <a href="/">Home</a>
         <a href="/about">About</a>
