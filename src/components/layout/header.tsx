@@ -2,26 +2,49 @@
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  background-color: #282c34;
-  padding: 20px;
+  background: radial-gradient(circle, #00bfff 0%, #282c34 100%);
+  padding: 30px 50px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 `;
 
 const Nav = styled.nav`
   a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 25px;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
 
     &:hover {
-      text-decoration: underline;
+      color: #00bfff;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 3px;
+      background: #00bfff;
+      transition: width 0.3s;
+      width: 0;
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 `;
@@ -29,7 +52,7 @@ const Nav = styled.nav`
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <Title>xHomerOx Web Application</Title>
+      <Title>xHomerOx WebApp</Title>
       <Nav>
         <a href="/">Home</a>
         <a href="/about">About</a>
