@@ -61,19 +61,22 @@ const CopyrightSection = styled.p`
 `;
 
 const Footer: React.FC = () => {
-    return (
-      <FooterContainer>
-        <TitleSection>
-          <h2>xHomerOx WebApp</h2>
-        </TitleSection>
-        <NavSection>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </NavSection>
-      </FooterContainer>
-    );
-  };
+  return (
+    <FooterContainer>
+      <TitleSection>
+        <h2>xHomerOx WebApp</h2>
+      </TitleSection>
+      <NavSection>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </NavSection>
+      <CopyrightSection>
+        &copy; 2024 xHomerOx WebApp. All rights reserved.
+      </CopyrightSection>
+    </FooterContainer>
+  );
+};
 
 export default Footer;

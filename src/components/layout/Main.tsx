@@ -1,14 +1,16 @@
 'use client'
 import React from 'react';
 import styled from 'styled-components';
+import Welcome from './Welcome';
+import About from './About';
 
 const MainContainer = styled.main`
   background-color: #000;
   color: white;
-  min-height: calc(100vh - 100px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 `;
@@ -16,8 +18,8 @@ const MainContainer = styled.main`
 const Main: React.FC = () => {
   return (
     <MainContainer>
-      <h2>Welcome to my new Website Application</h2>
-      <p>We will update content as soon as possible.</p>
+      <Welcome />
+      <About />
     </MainContainer>
   );
 };

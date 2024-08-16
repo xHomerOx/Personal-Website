@@ -56,9 +56,9 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <Title>xHomerOx WebApp</Title>
       <Nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+        <a href="#about" style={{ color: 'white', margin: '0 10px' }}>Sobre Nosotros</a>
+        <a href="#services" style={{ color: 'white', margin: '0 10px' }}>Servicios</a>
+        <a href="#footer" style={{ color: 'white', margin: '0 10px' }}>Contacto</a>
       </Nav>
     </HeaderContainer>
   );
