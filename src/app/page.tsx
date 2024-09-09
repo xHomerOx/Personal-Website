@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Background } from '@/once-ui/components';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -12,6 +13,11 @@ export default function Home() {
 			direction="column" alignItems="center" flex={1}>
 			<Background
 				dots={false}/>
+			<Flex
+				position="relative"
+				as="section" overflow="hidden"
+				fillWidth minHeight="0" maxWidth={100}
+				direction="column" alignItems="center" flex={1}>
 				<Flex
 					border="brand-medium"
 					borderStyle="solid-1"
@@ -22,40 +28,26 @@ export default function Home() {
 					fillWidth
 					onBackground="brand-strong"
 					background="brand-medium">
-					<Text>
-						About us
-					</Text>
-			</Flex>
-			<Flex
-				position="relative"
-				as="section" overflow="hidden"
-				fillWidth minHeight="0" maxWidth={68}
-				direction="column" alignItems="center" flex={1}>
+					<Link href={'about'}>
+						About me
+					</Link>
+					<Link href={'portfolio'}>
+						Portfolio
+					</Link>
+					<Link href={'contact'}>
+						Contact
+					</Link>
+				</Flex>
 				<Flex
 					as="main"
 					direction="column" justifyContent="center"
 					fillWidth fillHeight padding="l" gap="l">
-					<Flex
-						mobileDirection="column"
-						fillWidth gap="24">
-						<Flex
-							border="brand-medium"
-							borderStyle="solid-1"
-							direction="row"
-							gap="24"
-							padding="24"
-							alignItems="center"
-							justifyContent="center"
-							fillWidth
-							onBackground="brand-strong"
-							background="brand-medium">
-							<Heading
-								wrap="balance"
-								variant="body-default-l">
-									Welcome to xHomerOx Testing Website!
-							</Heading>
-						</Flex>
-					</Flex>
+					<Heading
+						align="center"
+						wrap="balance"
+						variant="body-default-l">
+							Welcome to xHomerOx Testing Website!
+					</Heading>
 					<Grid
 						radius="l"
 						border="neutral-medium"
@@ -65,6 +57,23 @@ export default function Home() {
 						mobileColumns="1col"
 						fillWidth>
 					</Grid>
+				</Flex>
+				<Flex
+					direction="column"
+					alignItems="center"
+					padding="l"
+					fillWidth
+					gap="l"
+					background="neutral-weak">
+					<Heading variant="body-default-l">
+						About Me
+					</Heading>
+					<Text variant="body-default-m" style={{ whiteSpace: 'pre-wrap' }}>
+						Hi, I'm Otello, Web Developer from Argentina, and welcome to my personal profile.
+						I specialize in creating modern web applications using the latest technologies.
+						I started my studies on TI at the age of 16, since then, I had interest on how computers work at that time and nowadays I can say I have mastered my skills on programming languages.
+						But like in all aspects of life, it's a path of never-ending learning.
+					</Text>
 				</Flex>
 			</Flex>
 			<Flex
