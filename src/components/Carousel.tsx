@@ -12,7 +12,7 @@ const Carousel: React.FC<CarouselProps> = ({ data }) => {
     <div style={{ position: 'relative', overflow: 'hidden', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '20px' }}>
       <div style={{ display: 'flex', transition: 'transform 0.5s ease'}}>
         {data.map((item, index) => (
-          <div key={index} style={{ minWidth: '100%', position: 'relative', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div key={index} style={{ minWidth: '100%', position: 'relative', height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div style={{
               color: 'white',
               fontSize: '24px',
