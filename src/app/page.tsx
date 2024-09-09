@@ -2,27 +2,9 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
-import Link from 'next/link';
+import { Heading, Text, Flex, Button, Grid, Background } from '@/once-ui/components';
 
 export default function Home() {
-	const links = [
-		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
-		},
-		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
-		},
-		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
-		},
-	];
 
 	return (
 		<Flex
@@ -30,6 +12,20 @@ export default function Home() {
 			direction="column" alignItems="center" flex={1}>
 			<Background
 				dots={false}/>
+				<Flex
+					border="brand-medium"
+					borderStyle="solid-1"
+					gap="24"
+					padding="24"
+					alignItems="center"
+					justifyContent="center"
+					fillWidth
+					onBackground="brand-strong"
+					background="brand-medium">
+					<Text>
+						About us
+					</Text>
+			</Flex>
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
@@ -43,38 +39,21 @@ export default function Home() {
 						mobileDirection="column"
 						fillWidth gap="24">
 						<Flex
-							position="relative"
-							flex={2} paddingTop="56" paddingX="xl">
-							<Logo size="xl" icon={false} style={{zIndex: '1'}}/>
-						</Flex>
-						<Flex
-							position="relative"
-							flex={4} gap="24" marginBottom="104"
-							direction="column">
-							<InlineCode
-								className="shadow-m"
-								style={{
-									width: 'fit-content',
-									padding: 'var(--static-space-8) var(--static-space-16)',
-									backdropFilter: 'blur(var(--static-space-1))'}}>
-								Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
-							</InlineCode>
+							border="brand-medium"
+							borderStyle="solid-1"
+							direction="row"
+							gap="24"
+							padding="24"
+							alignItems="center"
+							justifyContent="center"
+							fillWidth
+							onBackground="brand-strong"
+							background="brand-medium">
 							<Heading
 								wrap="balance"
-								variant="display-strong-s">
-								<span className="font-code">
-									<LetterFx
-										trigger="instant">
-										Helping designers code and developers design
-									</LetterFx>
-								</span>
+								variant="body-default-l">
+									Welcome to xHomerOx Testing Website!
 							</Heading>
-							<Button
-								href="https://once-ui.com/docs"
-								suffixIcon="chevronRight"
-								variant="secondary">
-								Read docs
-							</Button>
 						</Flex>
 					</Flex>
 					<Grid
@@ -85,31 +64,6 @@ export default function Home() {
 						tabletColumns="1col"
 						mobileColumns="1col"
 						fillWidth>
-						{links.map((link) => (
-							<Link
-								target="_blank"
-								style={{ padding: 'var(--responsive-space-l)' }}
-								key={link.href}
-								href={link.href}>
-								<Flex
-									fillWidth paddingY="8" gap="8"
-									direction="column">
-									<Flex
-										fillWidth gap="12"
-										alignItems="center">
-										<Text
-											variant="body-strong-m" onBackground="neutral-strong">
-											{link.title}
-										</Text>
-										<Icon size="s" name="arrowUpRight" />
-									</Flex>
-									<Text
-										variant="body-default-s" onBackground="neutral-weak">
-										{link.description}
-									</Text>
-								</Flex>
-							</Link>
-						))}
 					</Grid>
 				</Flex>
 			</Flex>
@@ -120,19 +74,14 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 Once UI, <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">MIT License</Link>
+					© 2024 xHomerOx Portfolio
 				</Text>
 				<Flex
 					gap="12">
 					<Button
-						href="https://github.com/once-ui-system/nextjs-starter"
+						href="https://github.com/xHomerOx/Website"
 						prefixIcon="github" size="s" variant="tertiary">
 						GitHub
-					</Button>
-					<Button
-						href="https://discord.com/invite/5EyAQ4eNdS"
-						prefixIcon="discord" size="s" variant="tertiary">
-						Discord
 					</Button>
 				</Flex>
 			</Flex>
