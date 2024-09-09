@@ -4,6 +4,11 @@ import React from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Background } from '@/once-ui/components';
 import Link from 'next/link';
+import Carousel from '@/components/Carousel';
+
+const DATA = [
+	{ text: 'Welcome to my World!' }
+];
 
 export default function Home() {
 
@@ -41,22 +46,14 @@ export default function Home() {
 				<Flex
 					as="main"
 					direction="column" justifyContent="center"
-					fillWidth fillHeight padding="l" gap="l">
+					fillWidth fillHeight paddingY="l" gap="l">
 					<Heading
 						align="center"
 						wrap="balance"
 						variant="body-default-l">
-							Welcome to xHomerOx Testing Website!
+							Welcome to xHomerOx Personal Website!
 					</Heading>
-					<Grid
-						radius="l"
-						border="neutral-medium"
-						borderStyle="solid-1"
-						columns="repeat(3, 1fr)"
-						tabletColumns="1col"
-						mobileColumns="1col"
-						fillWidth>
-					</Grid>
+					<Carousel data={DATA} />
 				</Flex>
 				<Flex
 					direction="column"
