@@ -59,9 +59,11 @@ export default function Home() {
 					direction="column"
 					alignItems="center"
 					padding="l"
+					marginY='l'
 					fillWidth
 					gap="l"
-					background="neutral-weak">
+					background="neutral-weak"
+					className='border-solid-1 brand-border-strong'>
 					<Heading variant="body-default-l">
 						About Me
 					</Heading>
@@ -70,6 +72,21 @@ export default function Home() {
 						I specialize in creating modern web applications using the latest technologies.
 						I started my studies on TI at the age of 16, since then, I had interest on how computers work at that time and nowadays I can say I have mastered my skills on programming languages.
 						But like in all aspects of life, it's a path of never-ending learning.
+					</Text>
+				</Flex>
+				<Flex
+					direction="column"
+					alignItems="center"
+					padding="l"
+					fillWidth
+					gap="l"
+					background="neutral-weak"
+					className='border-solid-1 accent-border-strong'>
+					<Heading variant="body-default-l">
+						Portfolio
+					</Heading>
+					<Text variant="body-default-m" style={{ whiteSpace: 'pre-wrap' }}>
+						Portfolio Section Text
 					</Text>
 				</Flex>
 			</Flex>
