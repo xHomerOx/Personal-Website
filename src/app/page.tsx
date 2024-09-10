@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Carousel from '@/components/Carousel';
 
 const DATA = [
-	{ text: 'Welcome to my World!' }
+	{ text: 'Otello Boz Maraldo\nSoftware Developer' }
 ];
 
 export default function Home() {
