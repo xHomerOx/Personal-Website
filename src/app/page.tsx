@@ -34,7 +34,7 @@ export default function Home() {
 					onBackground="brand-strong"
 					background="brand-medium">
 					<Link href={'about'}>
-						About me
+						About Me
 					</Link>
 					<Link href={'portfolio'}>
 						Portfolio
