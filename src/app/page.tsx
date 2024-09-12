@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Grid, Background } from '@/once-ui/components';
+import { Heading, Text, Flex, Button, Background } from '@/once-ui/components';
 import Link from 'next/link';
 import Carousel from '@/components/Carousel';
 
