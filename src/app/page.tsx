@@ -5,9 +5,15 @@ import React from 'react';
 import { Heading, Text, Flex, Button, Background } from '@/once-ui/components';
 import Link from 'next/link';
 import Carousel from '@/components/Carousel';
+import Languages from '@/components/Languages';
+import Programs from '@/components/Programs';
+import Databases from '@/components/Databases';
+import Frameworks from '@/components/Frameworks';
+import Management from '@/components/Management';
+import Stacks from '@/components/Stacks';
 
 const DATA = [
-	{ text: 'Otello Boz Maraldo\nSoftware Developer' }
+	{ imageUrl: '/images/background.jpg', text: 'Otello Boz Maraldo\nSoftware Developer' }
 ];
 
 export default function Home() {
@@ -83,11 +89,14 @@ export default function Home() {
 					background="neutral-weak"
 					className='border-solid-1 accent-border-strong'>
 					<Heading variant="body-default-l">
-						Portfolio
+						Knowledges
 					</Heading>
-					<Text variant="body-default-m" style={{ whiteSpace: 'pre-wrap' }}>
-						Portfolio Section Text
-					</Text>
+					<Languages />
+					<Databases />
+					<Frameworks />
+					<Management />
+					<Programs />
+					<Stacks />
 				</Flex>
 			</Flex>
 			<Flex
