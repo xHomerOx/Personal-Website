@@ -92,19 +92,19 @@ export default function Home() {
 					<Heading variant="body-default-l">
 						Knowledges
 					</Heading>
-					<div style={{
-						display: 'flex',
-						flexWrap: 'wrap',
-						gap: '16px', // Espacio entre los componentes
-						padding: '16px',
-						justifyContent: 'center' }}>
+					<Flex
+						direction="row"
+						wrap
+						gap="16"
+						padding="16"
+						justifyContent="center">
 						<Languages />
 						<Databases />
 						<Frameworks />
 						<Management />
 						<Programs />
 						<Stacks />
-					</div>
+					</Flex>
 				</Flex>
 			</Flex>
 			<Flex
