@@ -95,8 +95,8 @@ export default function Home() {
 					<Flex
 						direction="row"
 						wrap
-						gap="16"
-						padding="16"
+						gap="m"
+						padding="m"
 						justifyContent="center">
 						<Languages />
 						<Databases />

@@ -10,8 +10,8 @@ const Languages: React.FC = () => {
 return (
         <Flex
             border="accent-strong"
-            gap="24"
-            padding="24"
+            gap="m"
+            padding="m"
             alignItems="center"
             justifyContent="center"
             onBackground="accent-strong"
