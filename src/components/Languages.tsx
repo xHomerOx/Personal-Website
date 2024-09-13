@@ -19,10 +19,10 @@ return (
                 <Heading variant="body-default-m">
 						Languages
 				</Heading>
-                <Image src="/images/html-5.svg" width={100} height={100} alt="HTML5" />
-                <Image src="/images/css-3.svg" width={100} height={100} alt="CSS3" />
-                <Image src="/images/typescript.svg" width={100} height={100} alt="TypeScript" />
-                <Image src="/images/php.svg" width={100} height={100} alt="PHP" />
+                <Image src="/images/html-5.svg" width={50} height={50} alt="HTML5" />
+                <Image src="/images/css-3.svg" width={50} height={50} alt="CSS3" />
+                <Image src="/images/typescript.svg" width={50} height={50} alt="TypeScript" />
+                <Image src="/images/php.svg" width={50} height={50} alt="PHP" />
         </Flex>
     )
 }

@@ -19,8 +19,8 @@ return (
                 <Heading variant="body-default-m">
 						Frameworks
 				</Heading>
-                <Image src="/images/react.svg" width={100} height={100} alt="react" />
-                <Image src="/images/angular.svg" width={100} height={100} alt="angular" />
+                <Image src="/images/react.svg" width={50} height={50} alt="react" />
+                <Image src="/images/angular.svg" width={50} height={50} alt="angular" />
         </Flex>
     )
 }

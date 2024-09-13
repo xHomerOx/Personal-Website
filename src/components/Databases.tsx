@@ -19,8 +19,8 @@ return (
                 <Heading variant="body-default-m">
 						Databases
 				</Heading>
-                <Image src="/images/mysql.svg" width={100} height={100} alt="MySQL" />
-                <Image src="/images/mongodb.svg" width={100} height={100} alt="MongoDB" />
+                <Image src="/images/mysql.svg" width={50} height={50} alt="MySQL" />
+                <Image src="/images/mongodb.svg" width={50} height={50} alt="MongoDB" />
         </Flex>
     )
 }

@@ -19,9 +19,9 @@ return (
                 <Heading variant="body-default-m">
 						Programs
 				</Heading>
-                <Image src="/images/photoshop.svg" width={100} height={100} alt="Photoshop" />
-                <Image src="/images/illustrator.svg" width={100} height={100} alt="Illustrator" />
-                <Image src="/images/figma.svg" width={100} height={100} alt="Figma" />
+                <Image src="/images/photoshop.svg" width={50} height={50} alt="Photoshop" />
+                <Image src="/images/illustrator.svg" width={50} height={50} alt="Illustrator" />
+                <Image src="/images/figma.svg" width={50} height={50} alt="Figma" />
         </Flex>
     )
 }

@@ -19,9 +19,9 @@ return (
                 <Heading variant="body-default-m">
 						CMS
 				</Heading>
-                <Image src="/images/drupal.svg" width={100} height={100} alt="drupal" />
-                <Image src="/images/wordpress.svg" width={100} height={100} alt="wordpress" />
-                <Image src="/images/strapi.svg" width={100} height={100} alt="strapi" />
+                <Image src="/images/drupal.svg" width={50} height={50} alt="drupal" />
+                <Image src="/images/wordpress.svg" width={50} height={50} alt="wordpress" />
+                <Image src="/images/strapi.svg" width={50} height={50} alt="strapi" />
         </Flex>
     )
 }

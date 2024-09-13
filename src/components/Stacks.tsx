@@ -19,8 +19,8 @@ return (
                 <Heading variant="body-default-m">
 						Stacks
 				</Heading>
-                <Image src="/images/nextjs.svg" width={100} height={100} alt="nextjs" />
-                <Image src="/images/nestjs.svg" width={100} height={100} alt="nestjs" />
+                <Image src="/images/nextjs.svg" width={50} height={50} alt="nextjs" />
+                <Image src="/images/nestjs.svg" width={50} height={50} alt="nestjs" />
         </Flex>
     )
 }
