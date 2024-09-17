@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../app/styles/Skills.module.sass'
+import styles from '../styles/Skills.module.sass';
 
 const Skills: React.FC = () => (
   <div className={styles.skills}>
@@ -7,19 +7,25 @@ const Skills: React.FC = () => (
       <li>
         <h3>HTML</h3>
         <span className={styles.bar}>
-            <span className={`${styles.html} ${styles.bar}`}></span>
+          <span className={styles.html}></span>
         </span>
       </li>
       <li>
         <h3>CSS</h3>
         <span className={styles.bar}>
-            <span className={`${styles.css} ${styles.bar}`}></span>
+          <span className={styles.css}></span>
         </span>
       </li>
       <li>
         <h3>JavaScript</h3>
         <span className={styles.bar}>
-            <span className={`${styles.javascript} ${styles.bar}`}></span>
+          <span className={styles.javascript}></span>
+        </span>
+      </li>
+      <li>
+        <h3>TypeScript</h3>
+        <span className={styles.bar}>
+          <span className={styles.typescript}></span>
         </span>
       </li>
     </ul>

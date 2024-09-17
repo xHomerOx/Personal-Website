@@ -3,6 +3,10 @@
   margin: 60px auto
   color: #fff
 
+  ul
+    padding: 0
+    list-style: none
+
   li
     margin: 20px 0
 
@@ -15,37 +19,47 @@
     overflow: hidden
     box-shadow: 0 0 10px #2187e7b3
 
-    span
-      height: 2px
-      float: left
-      background-color: #2187e7
+  span
+    height: 2px
+    float: left
+    background-color: #2187e7
 
   .html
-    width: 100%
+    width: 80%
     animation: html 2s
 
   .css
-    width: 100%
+    width: 93%
     animation: css 2s
 
   .javascript
-    width: 100%
+    width: 50%
     animation: javascript 2s
+
+  .typescript
+    width: 40%
+    animation: typescript 2s
 
 @keyframes html
   0%
     width: 0%
   100%
-    width: 100%
+    width: 80%
 
 @keyframes css
   0%
     width: 0%
   100%
-    width: 100%
+    width: 93%
 
 @keyframes javascript
   0%
     width: 0%
   100%
-    width: 100%
+    width: 50%
+
+@keyframes typescript
+  0%
+    width: 0%
+  100%
+    width: 40%
