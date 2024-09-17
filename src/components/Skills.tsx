@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../styles/Skills.module.sass';
 
-import { Heading } from '@/once-ui/components';
+import { Flex, Heading } from '@/once-ui/components';
 
 const Skills: React.FC = () => (
-  <div className={styles.skills}>
+  <Flex fillWidth paddingTop="l" paddingX="l" direction="column" flex={1} className={styles.skills}>
     <ul>
       <li>
         <Heading as='h3' wrap="balance" variant="body-default-l">HTML</Heading>
@@ -85,7 +85,7 @@ const Skills: React.FC = () => (
         </span>
       </li>
     </ul>
-  </div>
+  </Flex>
 );
 
 export default Skills;
