@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Heading, Text, Flex, Button, Background } from '@/once-ui/components';
-import Link from 'next/link';
+import Nav from '@/components/Nav';
 import Skills from '@/components/Skills';
 
 export default function About() {
@@ -29,15 +29,7 @@ export default function About() {
 					fillWidth
 					onBackground="brand-strong"
 					background="brand-medium">
-					<Link href={'/about'}>
-						About Me
-					</Link>
-					<Link href={'/resume'}>
-						Resume
-					</Link>
-					<Link href={'/contact'}>
-						Contact
-					</Link>
+                    <Nav />
 				</Flex>
 				<Flex
 					as="main"

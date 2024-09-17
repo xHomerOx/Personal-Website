@@ -12,6 +12,7 @@ import Databases from '@/components/Databases';
 import Frameworks from '@/components/Frameworks';
 import Management from '@/components/Management';
 import Stacks from '@/components/Stacks';
+import Nav from '@/components/Nav';
 
 const DATA = [
 	{ imageUrl: '/images/background.jpg', text: 'Otello Boz Maraldo\nSoftware Developer' }
@@ -40,15 +41,7 @@ export default function Home() {
 					fillWidth
 					onBackground="brand-strong"
 					background="brand-medium">
-					<Link href={'/about'}>
-						About Me
-					</Link>
-					<Link href={'/resume'}>
-						Resume
-					</Link>
-					<Link href={'/contact'}>
-						Contact
-					</Link>
+   					<Nav />
 				</Flex>
 				<Flex
 					as="main"
