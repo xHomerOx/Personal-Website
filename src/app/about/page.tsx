@@ -2,9 +2,10 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Background } from '@/once-ui/components';
+import { Heading, Text, Flex, Background } from '@/once-ui/components';
 import Nav from '@/components/Nav';
 import Skills from '@/components/Skills';
+import Footer from '@/components/Footer';
 
 export default function About() {
 
@@ -13,7 +14,7 @@ export default function About() {
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
 			<Background
-				dots={false}/>
+				dots={false} />
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
@@ -29,7 +30,7 @@ export default function About() {
 					fillWidth
 					onBackground="brand-strong"
 					background="brand-medium">
-                    <Nav />
+					<Nav />
 				</Flex>
 				<Flex
 					as="main"
@@ -39,7 +40,7 @@ export default function About() {
 						align="center"
 						wrap="balance"
 						variant="body-default-l">
-							Welcome to xHomerOx Personal Website!
+						Welcome to xHomerOx Personal Website!
 					</Heading>
 				</Flex>
 				<Flex
@@ -72,7 +73,7 @@ export default function About() {
 					<Heading variant="body-default-l">
 						Skills
 					</Heading>
-                    <Skills />
+					<Skills />
 					<Flex
 						direction="row"
 						wrap
@@ -81,24 +82,7 @@ export default function About() {
 						justifyContent="center">
 					</Flex>
 				</Flex>
-			</Flex>
-			<Flex
-				as="footer"
-				position="relative"
-				fillWidth paddingX="l" paddingY="m"
-				justifyContent="space-between">
-				<Text
-					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 xHomerOx Portfolio
-				</Text>
-				<Flex
-					gap="12">
-					<Button
-						href="https://github.com/xHomerOx/Website"
-						prefixIcon="github" size="s" variant="tertiary">
-						GitHub
-					</Button>
-				</Flex>
+				<Footer />
 			</Flex>
 		</Flex>
 	);

@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Heading, Text, Flex, Button, Background } from '@/once-ui/components';
-import Link from 'next/link';
+import Nav from '@/components/Nav';
 
 export default function Home() {
 
@@ -12,7 +12,7 @@ export default function Home() {
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
 			<Background
-				dots={false}/>
+				dots={false} />
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
@@ -28,15 +28,7 @@ export default function Home() {
 					fillWidth
 					onBackground="brand-strong"
 					background="brand-medium">
-					<Link href={'about'}>
-						About Me
-					</Link>
-					<Link href={'portfolio'}>
-						Portfolio
-					</Link>
-					<Link href={'contact'}>
-						Contact
-					</Link>
+					<Nav />
 				</Flex>
 				<Flex
 					as="main"
@@ -46,7 +38,7 @@ export default function Home() {
 						align="center"
 						wrap="balance"
 						variant="body-default-l">
-							Page Not Found
+						Page Not Found
 					</Heading>
 				</Flex>
 				<Flex
@@ -61,24 +53,6 @@ export default function Home() {
 					<Heading variant="body-default-l">
 						404
 					</Heading>
-				</Flex>
-			</Flex>
-			<Flex
-				as="footer"
-				position="relative"
-				fillWidth paddingX="l" paddingY="m"
-				justifyContent="space-between">
-				<Text
-					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 xHomerOx Portfolio
-				</Text>
-				<Flex
-					gap="12">
-					<Button
-						href="https://github.com/xHomerOx/Website"
-						prefixIcon="github" size="s" variant="tertiary">
-						GitHub
-					</Button>
 				</Flex>
 			</Flex>
 		</Flex>

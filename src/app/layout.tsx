@@ -8,19 +8,19 @@ import { Raleway } from 'next/font/google';
 import { Sora } from 'next/font/google';
 
 const primary = Raleway({
-    variable: '--font-primary',
-    subsets: ['latin'],
-    display: 'swap'
+	variable: '--font-primary',
+	subsets: ['latin'],
+	display: 'swap'
 });
 
 const secondary = Sora({
-    variable: '--font-secondary',
-    subsets: ['latin'],
-    display: 'swap'
+	variable: '--font-secondary',
+	subsets: ['latin'],
+	display: 'swap'
 });
 
 type FontConfig = {
-    variable: string;
+	variable: string;
 };
 
 /*
@@ -38,9 +38,9 @@ const code = Source_Code_Pro({
 });
 
 export default function RootLayout({
-  	children,
+	children,
 }: Readonly<{
-  	children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
 	return (
 		<Flex

@@ -22,17 +22,17 @@ const Carousel: React.FC<CarouselProps> = ({ data }) => {
       <div style={{ display: 'flex', transition: 'transform 0.5s ease' }}>
         {data.map((item, index) => (
           <div key={index} style={{ minWidth: '100%', position: 'relative', height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img 
-              src={item.imageUrl} 
-              alt={item.text} 
-              style={{ 
-                position: 'absolute', 
-                top: 0, 
-                left: 0, 
-                width: '100%', 
-                height: '100%', 
+            <img
+              src={item.imageUrl}
+              alt={item.text}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
                 objectFit: 'cover'
-              }} 
+              }}
             />
             <div style={{
               color: 'white',

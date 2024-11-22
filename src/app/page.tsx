@@ -3,7 +3,6 @@
 import React from 'react';
 
 import { Heading, Text, Flex, Button, Background } from '@/once-ui/components';
-import Link from 'next/link';
 
 import Carousel from '@/components/Carousel';
 import Languages from '@/components/Languages';
@@ -13,6 +12,7 @@ import Frameworks from '@/components/Frameworks';
 import Management from '@/components/Management';
 import Stacks from '@/components/Stacks';
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 
 const DATA = [
 	{ imageUrl: '/images/background.jpg', text: 'Otello Boz Maraldo\nSoftware Developer' }
@@ -25,7 +25,7 @@ export default function Home() {
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
 			<Background
-				dots={false}/>
+				dots={false} />
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
@@ -41,7 +41,7 @@ export default function Home() {
 					fillWidth
 					onBackground="brand-strong"
 					background="brand-medium">
-   					<Nav />
+					<Nav />
 				</Flex>
 				<Flex
 					as="main"
@@ -51,7 +51,7 @@ export default function Home() {
 						align="center"
 						wrap="balance"
 						variant="body-default-l">
-							Welcome to xHomerOx Personal Website!
+						Welcome to xHomerOx Personal Website!
 					</Heading>
 					<Carousel data={DATA} />
 				</Flex>
@@ -99,24 +99,7 @@ export default function Home() {
 						<Stacks />
 					</Flex>
 				</Flex>
-			</Flex>
-			<Flex
-				as="footer"
-				position="relative"
-				fillWidth paddingX="l" paddingY="m"
-				justifyContent="space-between">
-				<Text
-					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 xHomerOx Portfolio
-				</Text>
-				<Flex
-					gap="12">
-					<Button
-						href="https://github.com/xHomerOx/Website"
-						prefixIcon="github" size="s" variant="tertiary">
-						GitHub
-					</Button>
-				</Flex>
+				<Footer />
 			</Flex>
 		</Flex>
 	);

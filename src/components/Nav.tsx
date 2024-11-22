@@ -8,16 +8,16 @@ const Nav: React.FC = () => {
     return (
         <>
             <Link href={'/'}>
-            Home
+                Home
             </Link>
             <Link href={'/about'}>
-            About Me
+                About Me
             </Link>
             <Link href={'/resume'}>
-            Resume
+                Resume
             </Link>
             <Link href={'/contact'}>
-            Contact
+                Contact
             </Link>
         </>
     )
