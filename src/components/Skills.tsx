@@ -1,85 +1,118 @@
-import React from 'react';
-import styles from '../styles/Skills.module.sass';
+import React from "react";
+import styles from "../styles/Skills.module.sass";
 
-import { Flex, Heading } from '@/once-ui/components';
+import { Flex, Heading } from "@/once-ui/components";
 
 const Skills: React.FC = () => (
-  <Flex fillWidth paddingTop="l" paddingX="l" direction="column" flex={1} className={styles.skills}>
+  <Flex
+    fillWidth
+    paddingTop="l"
+    paddingX="l"
+    direction="column"
+    flex={1}
+    className={styles.skills}
+  >
     <ul>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">HTML</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          HTML
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.html} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">CSS</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          CSS
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.css} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">JavaScript</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          JavaScript
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.javascript} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">TypeScript</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          TypeScript
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.typescript} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">Angular</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          Angular
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.angular} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">React</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          React
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.react} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">MongoDB</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          MongoDB
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.mongodb} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">MySQL</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          MySQL
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.mysql} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">Drupal</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          Drupal
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.drupal} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">WordPress</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          WordPress
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.wordpress} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">Strapi</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          Strapi
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.strapi} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">NodeJS</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          NodeJS
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.nodejs} ${styles.bar}`}></span>
         </span>
       </li>
       <li>
-        <Heading as='h3' wrap="balance" variant="body-default-l">Express</Heading>
+        <Heading as="h3" wrap="balance" variant="body-default-l">
+          Express
+        </Heading>
         <span className={styles.bar}>
           <span className={`${styles.express} ${styles.bar}`}></span>
         </span>
