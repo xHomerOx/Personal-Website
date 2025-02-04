@@ -990,6 +990,11 @@ prismjs@^1.29.0:
   resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.29.0.tgz"
   integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
+react-card-flip@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npmjs.org/react-card-flip/-/react-card-flip-1.2.3.tgz"
+  integrity sha512-yb8+yyeTf5UVlZ/FC78XDgxYeWhgA0W28OXNB31LjiFeY1Y2kFhLP7bFiED4KNaRWKjaafT74G38XU53a6eIuw==
+
 react-dom@19.0.0:
   version "19.0.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-19.0.0.tgz"
