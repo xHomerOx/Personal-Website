@@ -36,6 +36,9 @@ import {
   Column,
   Row,
   StyleOverlay,
+  Flex,
+  RevealFx,
+  Accordion,
 } from "@/once-ui/components";
 import { CodeBlock, MediaUpload } from "@/once-ui/modules";
 
@@ -258,39 +261,28 @@ export default function Home() {
                 Built in NextJS
                 <br /> with once-ui theming:
               </Heading>
-              <LogoCloud
-                paddingBottom="104"
-                columns="3"
-                mobileColumns="1"
-                limit={3}
-                fillWidth
-                logos={[
-                  {
-                    icon: false,
-                    wordmarkSrc: "/trademark/dopler-wordmark.svg",
-                    href: "https://dropler.app",
-                    size: "m",
-                  },
-                  {
-                    icon: false,
-                    wordmarkSrc: "/trademark/design-engineers-wordmark.svg",
-                    href: "https://club.dropler.io",
-                    size: "m",
-                  },
-                  {
-                    icon: false,
-                    wordmarkSrc: "/trademark/enroll-wordmark.svg",
-                    href: "https://enroll.dopler.app",
-                    size: "m",
-                  },
-                  {
-                    icon: false,
-                    wordmarkSrc: "/trademark/magic-portfolio-wordmark.svg",
-                    href: "https://magic-portfolio.com",
-                    size: "m",
-                  },
-                ]}
-              />
+              <RevealFx
+                speed="medium"
+                delay={0}
+                translateY={0}
+              >
+                <Flex
+                  direction="column"
+                  padding="24"
+                  gap="8"
+                  align="center"
+                >
+                  <Text variant="heading-strong-m">
+                    Create - Design - Code - Deploy
+                  </Text>
+                  <Text
+                    onBackground="neutral-medium"
+                    marginBottom="16"
+                  >
+                    Project Completed!!!
+                  </Text>
+                </Flex>
+              </RevealFx>
             </Column>
           </Column>
           <Column ref={experienceRef} fillWidth paddingX="32" gap="12" horizontal="center" position="relative">
@@ -298,7 +290,7 @@ export default function Home() {
               Experience
             </Heading>
             <Text marginBottom="32" align="center" onBackground="neutral-weak">
-              Tiny snippets to inspire your next project
+              Academic XPR
             </Text>
 
             {/* LOGIN */}
@@ -310,9 +302,48 @@ export default function Home() {
               border="neutral-alpha-weak"
               overflow="hidden"
             >
-              <Row fill hide="m">
-                <SmartImage src="/images/login.png" alt="Preview image" sizes="560px" />
-              </Row>
+              <Flex direction="column" gap="8">
+                <Accordion title="HTML5">
+                  <p>
+                    HTML5 is the fifth version of the HyperText Markup Language (HTML), designed to structure and present content on the web. It introduces new semantic elements, multimedia support, and APIs for enhanced web applications.
+                  </p>
+                </Accordion>
+                <Accordion title="CSS3">
+                  <p>
+                    CSS3 is the latest evolution of Cascading Style Sheets, used to style and layout web pages. It introduces advanced features like animations, transitions, and responsive design capabilities.
+                  </p>
+                </Accordion>
+                <Accordion title="JavaScript">
+                  <p>
+                    JavaScript is a high-level, interpreted programming language that enables interactive web pages. It allows developers to create dynamic content, control multimedia, animate images, and much more.
+                  </p>
+                </Accordion>
+                <Accordion title="TypeScript">
+                  <p>
+                    TypeScript is a superset of JavaScript that adds static types. It helps developers catch errors early through a type system and enhances code quality and maintainability.
+                  </p>
+                </Accordion>
+                <Accordion title="Sass">
+                  <p>
+                    Sass (Syntactically Awesome Style Sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). It enables variables, nested rules, and mixins for more maintainable stylesheets.
+                  </p>
+                </Accordion>
+                <Accordion title="Less">
+                  <p>
+                    Less is a backward-compatible language extension for CSS. It allows for variables, nesting, and functions to make CSS more dynamic and easier to manage.
+                  </p>
+                </Accordion>
+                <Accordion title="Material UI">
+                  <p>
+                    Material UI is a popular React UI framework that implements Google's Material Design. It provides components that are easy to use and customize, enabling developers to build responsive web applications efficiently.
+                  </p>
+                </Accordion>
+                <Accordion title="PHP">
+                  <p>
+                    PHP (Hypertext Preprocessor) is a server-side scripting language designed primarily for web development. It can be embedded into HTML and is widely used for creating dynamic web pages and applications.
+                  </p>
+                </Accordion>
+              </Flex>
               <Column fillWidth horizontal="center" gap="20" padding="32" position="relative">
                 <Background
                   mask={{
