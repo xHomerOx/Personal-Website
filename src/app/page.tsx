@@ -36,6 +36,7 @@ import {
   Flex,
   RevealFx,
   Accordion,
+  SmartImage,
 } from "@/once-ui/components";
 import { CodeBlock, MediaUpload } from "@/once-ui/modules";
 import Logo from "@/components/Logo";
@@ -405,75 +406,32 @@ export default function Home() {
                     height: "1rem",
                   }}
                 />
-                <Heading as="h3" variant="display-default-s">
-                  Welcome to Once UI
-                </Heading>
-                <Text onBackground="neutral-medium" marginBottom="24">
-                  Log in or
-                  <SmartLink href="/">sign up</SmartLink>
-                </Text>
-                <Column fillWidth gap="8">
-                  <Button
-                    label="Continue with Google"
+                <Card maxWidth={24} radius="l-4" direction="column">
+                  <SmartImage
+                    sizes="640px"
                     fillWidth
-                    variant="secondary"
-                    weight="default"
-                    prefixIcon="google"
-                    size="l"
+                    aspectRatio="4 / 3"
+                    radius="l"
+                    src="https://avatars.githubusercontent.com/u/10964312?v=4"
                   />
-                  <Button
-                    label="Continue with GitHub"
-                    fillWidth
-                    variant="secondary"
-                    weight="default"
-                    prefixIcon="github"
-                    size="l"
-                  />
-                </Column>
-                <Row fillWidth paddingY="24">
+                  <Column fillWidth paddingX="20" paddingY="24" gap="8">
+                    <Text variant="body-default-xl">Otello Boz Maraldo</Text>
+                    <Text onBackground="neutral-weak" variant="body-default-s">
+                      I'm an experienced Web Developer with knowledge in UX/UI
+                      Design, my areas cover from layout, animations, styles,
+                      scripting, coding and testing.
+                    </Text>
+                  </Column>
                   <Row
-                    onBackground="neutral-weak"
-                    fillWidth
-                    gap="24"
+                    paddingX="20"
+                    paddingY="12"
+                    gap="8"
                     vertical="center"
+                    textVariant="label-default-s"
+                    onBackground="neutral-medium"
                   >
-                    <Line />/<Line />
                   </Row>
-                </Row>
-                <Column gap="-1" fillWidth>
-                  <Input
-                    id="email"
-                    label="Email"
-                    labelAsPlaceholder
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                    validate={validateLogin}
-                    errorMessage={false}
-                    radius="top"
-                  />
-                  <PasswordInput
-                    autoComplete="new-password"
-                    id="password"
-                    label="Password"
-                    labelAsPlaceholder
-                    radius="bottom"
-                    onChange={(e) => setPassword(e.target.value)}
-                    value={password}
-                    validate={validateLogin}
-                  />
-                </Column>
-                <Button
-                  id="login"
-                  label="Log in"
-                  arrowIcon
-                  fillWidth
-                  onClick={() => {
-                    addToast({
-                      variant: "success",
-                      message: "Wohoo! It's a toast!",
-                    });
-                  }}
-                />
+                </Card>
               </Column>
             </Row>
           </Column>
