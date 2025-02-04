@@ -18,22 +18,19 @@
     "prismjs": "^1.29.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-icons": "^5.2.1",
+    "react-icons": "^5.4.0",
     "sass": "^1.77.6",
     "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@csstools/postcss-global-data": "^2.1.1",
-    "@types/node": "^20",
-    "@types/react": "19.0.1",
+    "@types/node": "22.10.10",
+    "@types/react": "19.0.8",
     "@types/react-dom": "19.0.2",
     "postcss-custom-media": "^10.0.7",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "typescript": "^5"
+    "typescript": "5.7.3"
   },
-  "overrides": {
-    "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.2"
-  }
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

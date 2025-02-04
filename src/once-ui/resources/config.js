@@ -3,28 +3,28 @@ const baseURL = "demo.once-ui.com";
 // default customization applied to the HTML in the main layout.tsx
 const style = {
   theme: "dark", // dark | light
-  neutral: "gray", // sand | gray | slate
-  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  neutral: "slate", // sand | gray | slate
+  brand: "blue", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "blue", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast | inverse
   solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
-  surface: "filled", // filled | translucent
+  border: "conservative", // rounded | playful | conservative
+  surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
   scaling: "100", // 90 | 95 | 100 | 105 | 110
 };
 
 // default metadata
 const meta = {
-  title: "Once UI - Your Personalized Design System for Next.js",
+  title: "Otello Website",
   description:
-    "An open-source design system and component library for Next.js that emphasizes easy styling and accessibility in UI development.",
+    "Otello Website for testing purposes, built in Next.js using once-ui theming.",
 };
 
 // default open graph data
 const og = {
-  title: "Once UI for Next.js",
-  description: "We let designers code and developers design.",
+  title: "Otello Website",
+  description: "Free code and design.",
   type: "website",
   image: "/images/cover.jpg"
 };
@@ -32,17 +32,18 @@ const og = {
 // default schema data
 const schema = {
   logo: "",
-  type: "Organization",
-  name: "One UI",
-  description: "Once UI is an open-source design system and component library for Next.js.",
-  email: "",
+  type: "Reel",
+  name: "My Reel",
+  description: "Portfolio - Theming - Styles - Design - Coding - Next.js - once-ui - Otello",
+  email: "homero.tw@gmail.com",
 };
 
 // social links
 const social = {
-  twitter: "https://www.twitter.com/_onceui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  website: "otellobm.vercel.app",
+  twitter: "https://www.twitter.com/xhomerox",
+  linkedin: "https://ar.linkedin.com/in/xhomerox",
+  github: "https://github.com/xhomerox",
 };
 
 export { baseURL, style, meta, og, schema, social };

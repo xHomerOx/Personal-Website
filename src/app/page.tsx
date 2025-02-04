@@ -1,13 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import {
   Heading,
   Text,
   Button,
   Icon,
-  InlineCode,
   Logo,
   Input,
   Avatar,
@@ -53,6 +52,8 @@ export default function Home() {
   const [tags, setTags] = useState<string[]>(["UX / UI", "Design systems", "AI / ML"]);
   const [twoFA, setTwoFA] = useState(false);
 
+  const experienceRef = useRef<HTMLDivElement | null>(null);
+
   const handleSelect = (value: string) => {
     console.log("Selected option:", value);
     setSelectedValue(value);
@@ -96,6 +97,12 @@ export default function Home() {
     return null;
   };
 
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Column fillWidth paddingY="80" paddingX="s" horizontal="center" flex={1}>
       <Fade
@@ -124,15 +131,15 @@ export default function Home() {
           <Logo size="m" icon={false} href="https://once-ui.com" />
           <Row gap="12" hide="s">
             <Button
-              href="https://discord.com/invite/5EyAQ4eNdS"
-              prefixIcon="discord"
+              href="https://ar.linkedin.com/in/xhomerox"
+              prefixIcon="linkedIn"
               size="s"
-              label="Discord"
+              label="LinkedIn"
               weight="default"
               variant="tertiary"
             />
             <Button
-              href="https://github.com/once-ui-system/nextjs-starter"
+              href="https://github.com/xhomerox"
               prefixIcon="github"
               size="s"
               label="GitHub"
@@ -225,20 +232,13 @@ export default function Home() {
             }}
           />
           <Column fillWidth horizontal="center" gap="32" padding="32" position="relative">
-            <InlineCode radius="xl" shadow="m" fit paddingX="16" paddingY="8">
-              Start by editing
-              <Text onBackground="brand-medium" marginLeft="8">
-                app/page.tsx
-              </Text>
-            </InlineCode>
             <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
-              We let designers code and developers design
+              Welcome to Otello Personal Website!
             </Heading>
             <Button
-              id="readDocs"
-              target="_blank"
-              label="Open docs"
-              href="https://once-ui.com/docs"
+              onClick={() => scrollToSection(experienceRef)}
+              id="readMore"
+              label="Read more"
               variant="secondary"
               arrowIcon
             />
@@ -250,16 +250,13 @@ export default function Home() {
                 size="s"
                 avatars={[
                   {
-                    src: "/images/l.jpg",
-                  },
-                  {
-                    src: "/images/z.jpg",
+                    src: "https://avatars.githubusercontent.com/u/10964312?v=4",
                   },
                 ]}
               />
               <Heading marginBottom="12" as="h2" align="center" variant="heading-default-l">
-                Brought to you by indie creators
-                <br /> behind stellar projects:
+                Built in NextJS
+                <br /> with once-ui theming:
               </Heading>
               <LogoCloud
                 paddingBottom="104"
@@ -296,9 +293,9 @@ export default function Home() {
               />
             </Column>
           </Column>
-          <Column fillWidth paddingX="32" gap="12" horizontal="center" position="relative">
+          <Column ref={experienceRef} fillWidth paddingX="32" gap="12" horizontal="center" position="relative">
             <Heading as="h2" variant="display-default-m">
-              Showcase
+              Experience
             </Heading>
             <Text marginBottom="32" align="center" onBackground="neutral-weak">
               Tiny snippets to inspire your next project

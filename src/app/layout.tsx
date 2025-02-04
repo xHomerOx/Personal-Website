@@ -8,14 +8,22 @@ import { Metadata } from "next";
 import { baseURL, style, meta, og, schema, social } from "@/once-ui/resources/config";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 
-import { Inter } from "next/font/google";
 import { Roboto_Mono } from "next/font/google";
+import { Raleway } from 'next/font/google';
+import { Sora } from 'next/font/google';
 
-const primary = Inter({
-  variable: "--font-primary",
-  subsets: ["latin"],
-  display: "swap",
+const primary = Raleway({
+  variable: '--font-primary',
+  subsets: ['latin'],
+  display: 'swap'
 });
+
+const secondary = Sora({
+  variable: '--font-secondary',
+  subsets: ['latin'],
+  display: 'swap'
+});
+
 
 const code = Roboto_Mono({
   variable: "--font-code",
@@ -28,10 +36,10 @@ type FontConfig = {
 };
 
 /*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
+  Replace with code for secondary and tertiary fonts
+  from https://once-ui.com/customize
 */
-const secondary: FontConfig | undefined = undefined;
+
 const tertiary: FontConfig | undefined = undefined;
 /*
  */
@@ -48,11 +56,11 @@ export async function generateMetadata(): Promise<Metadata> {
       description: og.description,
       url: "https://" + baseURL,
       images: [
-				{
-					url: og.image,
-					alt: og.title,
-				},
-			],
+        {
+          url: og.image,
+          alt: og.title,
+        },
+      ],
       type: og.type as
         | "website"
         | "article"
@@ -68,11 +76,11 @@ export async function generateMetadata(): Promise<Metadata> {
         | "video.other",
     },
     twitter: {
-			card: 'summary_large_image',
-			title: og.title,
-			description: og.description,
-			images: [og.image],
-		},
+      card: 'summary_large_image',
+      title: og.title,
+      description: og.description,
+      images: [og.image],
+    },
     metadataBase,
   };
 }
@@ -125,7 +133,7 @@ export default function RootLayout({
         />
       </head>
       <ToastProvider>
-        <Column as="body" fillWidth  margin="0" padding="0">
+        <Column as="body" fillWidth margin="0" padding="0">
           <Background
             position="absolute"
             mask={{
