@@ -466,17 +466,22 @@ export default function Home() {
           >
             <FlipCard
               frontContent={
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  Otello Boz Maraldo
-                </div>
+                <Column>
+                  <h3
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "36px",
+                      marginBottom: "20px"
+                    }}
+                  >
+                    Otello Boz Maraldo
+                  </h3>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>Web Developer</p>
+                </Column>
               }
               backContent={
                 <div

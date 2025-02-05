@@ -16,7 +16,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontContent, backContent }) => {
   const handleMouseLeave = () => {
     setIsFlipped(false);
   };
-  
+
   return (
     <ReactCardFlip
       isFlipped={isFlipped}
@@ -50,6 +50,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontContent, backContent }) => {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#28a745",
+          background: "linear-gradient(262deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%)",
           color: "white",
           borderRadius: "10px",
           cursor: "pointer",
