@@ -41,6 +41,7 @@ import {
 import { CodeBlock, MediaUpload } from "@/once-ui/modules";
 import Logo from "@/components/Logo";
 import FlipCard from "@/components/FlipCard";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   const [selectedValue, setSelectedValue] = useState("");
@@ -484,16 +485,22 @@ export default function Home() {
                 </Column>
               }
               backContent={
-                <div
-                  style={{
-                    height: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  Reverso
-                </div>
+                <>
+                  <h3
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "36px",
+                      marginBottom: "20px"
+                    }}
+                  >
+                    Academic Career
+                  </h3>
+                  <Skills />
+                </>
               }
             />
           </Row>
